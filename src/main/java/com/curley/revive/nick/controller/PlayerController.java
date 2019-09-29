@@ -27,7 +27,7 @@ public class PlayerController {
     /**
      * @return
      */
-    @RequestMapping(value="/employee", method=RequestMethod.GET)
+    @RequestMapping(value="/player", method=RequestMethod.GET)
     public List<Player> getPlayers() {
         return playerService.getAllPlayers();
     }
@@ -36,7 +36,7 @@ public class PlayerController {
      * @param id
      * @return
      */
-    @RequestMapping(value="/employee/{id}", method=RequestMethod.GET)
+    @RequestMapping(value="/player/{id}", method=RequestMethod.GET)
     public Player getPlayer(@PathVariable("id") long id) {
         return playerService.getPlayerById(id);
     }
